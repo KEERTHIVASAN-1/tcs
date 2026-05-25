@@ -22,28 +22,43 @@
 //         }
 //         System.out.print("Prime");
 //     }
-import java.util.*;
-public class day1
-{
-    public static void main(String[]args)
-    {
-        Scanner input=new Scanner(System.in);
-        int n=input.nextInt();
-        int org=n;
-        int rev=0,last;
-        while(n!=0)
-        {
-            last=n%10;
-            rev=rev*10+last;
-            n=n/10;
-        }
-        if(rev==org)
-        {
-            System.out.print("palin");
-        }
-        else
-        {
-            System.out.print("not palin");
-        }
-    }
-}
+// PALINDROME
+// import java.util.*;
+// public class day1
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int n=input.nextInt();
+//         int org=n;
+//         int rev=0,last;
+//         while(n!=0)
+//         {
+//             last=n%10;
+//             rev=rev*10+last;
+//             n=n/10;
+//         }
+//         if(rev==org)
+//         {
+//             System.out.print("palin");
+//         }
+//         else
+//         {
+//             System.out.print("not palin");
+//         }
+//     }
+// }
+// REVERSE STRING
+// import java.util.*;
+// public class day1
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String s=input.next();
+//         for(int i=s.length()-1;i>=0;i--)
+//         {
+//             System.out.print(s.charAt(i));
+//         }
+//     }
+// }
