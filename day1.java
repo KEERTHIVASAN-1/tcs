@@ -62,3 +62,36 @@
 //         }
 //     }
 // }
+import java.util.*;
+public class day1
+{
+    public static void main(String[]args)
+    {
+        Scanner input=new Scanner(System.in);
+        int n=input.nextInt();
+        int org,a,last;
+        int sum=0,count=0;
+        org=n;
+        int main=n;
+        while(n>0)
+        {
+            count++;
+            n=n/10;
+        }
+        while(org>0)
+        {
+            last=org%10;
+            a=(int)Math.pow(last,count);
+            sum=sum+a;
+            org=org/10;
+        }
+        if(main==sum)
+        {
+            System.out.print("Arm");
+        }
+        else
+        {
+            System.out.print("No arm");
+        }
+    }
+}
