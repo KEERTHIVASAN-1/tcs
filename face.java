@@ -1,30 +1,63 @@
+// NO OF BOXES
+// import java.util.*;
+// public class face
+// {
+//     public static void main(String[] args)
+//     {
+//         Scanner input = new Scanner(System.in);
+//         int n = input.nextInt();
+//         int[] arr = new int[n];
+//         for(int i = 0; i < n; i++)
+//         {
+//             arr[i] = input.nextInt();
+//         }
+//         int C=input.nextInt();
+//         int sum=0;
+//         int box=1;
+//         for(int i=0;i<n;i++)
+//         {
+//             if(sum+arr[i]>C)
+//             {
+//                 box++;
+//                 sum=arr[i];
+//             }
+//             else
+//             {
+//                 sum=sum+arr[i];
+//             }
+//         }
+//         System.out.print(box);
+//     }
+// }
+DONT COUNT ODD CHAR AND ONLY COUNT EVEN NUMEBR OF CHAR
 import java.util.*;
-public class face
+public class Main
 {
-    public static void main(String[] args)
+    public static void main(String[]args)
     {
-        Scanner input = new Scanner(System.in);
-        int n = input.nextInt();
-        int[] arr = new int[n];
-        for(int i = 0; i < n; i++)
+        Scanner input=new Scanner(System.in);
+        String s=input.nextLine();
+        int count=1;
+        int maxcount=0;
+        for(int i=1;i<s.length();i++)
         {
-            arr[i] = input.nextInt();
-        }
-        int C=input.nextInt();
-        int sum=0;
-        int box=1;
-        for(int i=0;i<n;i++)
-        {
-            if(sum+arr[i]>C)
+            if(s.charAt(i)==s.charAt(i-1))
             {
-                box++;
-                sum=arr[i];
+                count++;
             }
             else
             {
-                sum=sum+arr[i];
+                if(count%2==0)
+                {
+                    maxcount+=count;
+                }
+                count=1;
             }
         }
-        System.out.print(box);
+        if(count%2==0)
+                {
+                    maxcount+=count;
+                }
+            System.out.print(maxcount);
     }
 }
