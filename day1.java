@@ -116,6 +116,26 @@
 //         System.out.print(count);
 //     }
 // }
+// import java.util.*;
+// public class day1
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int n=input.nextInt();
+//         int a=0;
+//         int b=1;
+//         int c=0;
+//         for(int i=0;i<n;i++)
+//         {
+//             System.out.print(a+ " ");
+//             c=a+b;
+//             a=b;
+//             b=c;
+//         }
+//     }
+// }
+Factorial
 import java.util.*;
 public class day1
 {
@@ -123,15 +143,11 @@ public class day1
     {
         Scanner input=new Scanner(System.in);
         int n=input.nextInt();
-        int a=0;
-        int b=1;
-        int c=0;
-        for(int i=0;i<n;i++)
+        int fact=1;
+        for(int i=n;i>1;i--)
         {
-            System.out.print(a+ " ");
-            c=a+b;
-            a=b;
-            b=c;
+            fact=fact*i;
         }
+        System.out.print(fact);
     }
 }
