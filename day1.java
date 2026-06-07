@@ -152,6 +152,34 @@
 //         System.out.print(fact);
 //     }
 // }
+// SECOND LARGEST
+// import java.util.*;
+// public class day1
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int n=input.nextInt();
+//         int []arr=new int[n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=input.nextInt();
+//         }
+//         Arrays.sort(arr);
+//         int lar;
+//         int sec_max=-1;
+//         lar=arr[n-1];
+//         for(int i=n-1;i>=0;i--)
+//         {
+//             if(arr[i]!=lar)
+//             {
+//                 sec_max=arr[i];
+//                 break;
+//             }
+//         }
+//         System.out.print(sec_max);
+//     }
+// }
 import java.util.*;
 public class day1
 {
@@ -164,20 +192,20 @@ public class day1
         {
             arr[i]=input.nextInt();
         }
-        Arrays.sort(arr);
-        int lar;
-        int sec_max=-1;
-        lar=arr[n-1];
-        for(int i=n-1;i>=0;i--)
+        int []brr=new int[n];
+        int j=0;
+        for(int i=0;i<n;i++)
         {
-            if(arr[i]!=lar)
+            if(arr[i]!=0)
             {
-                sec_max=arr[i];
-                break;
-            }
+                brr[j]=arr[i];
+                j++;
+            }  
         }
-        System.out.print(sec_max);
+        for(int i=0;i<n;i++)
+        {
+            System.out.print(brr[i]+" ");
+        }
     }
 }
-
 
