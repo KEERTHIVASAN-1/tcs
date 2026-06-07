@@ -116,6 +116,7 @@
 //         System.out.print(count);
 //     }
 // }
+//  FIBONAACII SERIIES
 // import java.util.*;
 // public class day1
 // {
@@ -151,4 +152,32 @@
 //         System.out.print(fact);
 //     }
 // }
+import java.util.*;
+public class day1
+{
+    public static void main(String[]args)
+    {
+        Scanner input=new Scanner(System.in);
+        int n=input.nextInt();
+        int []arr=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=input.nextInt();
+        }
+        Arrays.sort(arr);
+        int lar;
+        int sec_max=-1;
+        lar=arr[n-1];
+        for(int i=n-1;i>=0;i--)
+        {
+            if(arr[i]!=lar)
+            {
+                sec_max=arr[i];
+                break;
+            }
+        }
+        System.out.print(sec_max);
+    }
+}
+
 

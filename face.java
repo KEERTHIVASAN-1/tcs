@@ -114,18 +114,19 @@
 //         System.out.print(count);
 //     }
 // }
-import java.util.*;
-public class face
-{
-    public static void main(String[]args)
-    {
-        Scanner input=new Scanner(System.in);
-        String s=input.nextLine();
-        char []ch=s.toCharArray();
-        Arrays.sort(ch);
-        for(int i=s.length()-1;i>=0;i--)
-        {
-            System.out.print(ch[i]);
-        }
-    }
-}
+// LARGEST NUMBER POSSIBLE
+// import java.util.*;
+// public class face
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String s=input.nextLine();
+//         char []ch=s.toCharArray();
+//         Arrays.sort(ch);
+//         for(int i=s.length()-1;i>=0;i--)
+//         {
+//             System.out.print(ch[i]);
+//         }
+//     }
+// }
