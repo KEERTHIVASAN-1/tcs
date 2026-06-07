@@ -130,34 +130,62 @@
 //         }
 //     }
 // }
-AUTO IMMUNE DISEASE
+// AUTO IMMUNE DISEASE
+// import java.util.*;
+// public class face{
+//     public static void main(String[] args)
+//     {
+//         Scanner sc = new Scanner(System.in);
+//         int n=sc.nextInt();
+//         int l=sc.nextInt();
+//         int high=0;
+//         int low=0;
+//         int[] arr = new int[n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i] = sc.nextInt();
+//         }
+//         for(int i=0;i<n;i++)
+//         {
+//             if(arr[i]<11 || arr[i]>81)
+//             {
+//                 high++;
+//             }
+//             else
+//             {
+//                 low++;
+//             }
+//         }
+//         high=(high+l-1)/l;
+//         low=(low+l-1)/l;
+//         System.out.print(high+low);
+//     }
+// }
 import java.util.*;
 public class face{
     public static void main(String[] args)
     {
-        Scanner sc = new Scanner(System.in);
-        int n=sc.nextInt();
-        int l=sc.nextInt();
-        int high=0;
-        int low=0;
-        int[] arr = new int[n];
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int [] arr=new int[n];
+        int p1,p2;
         for(int i=0;i<n;i++)
         {
-            arr[i] = sc.nextInt();
+            arr[i]=input.nextInt();
         }
-        for(int i=0;i<n;i++)
+        Arrays.sort(arr);
+        int sum=0;
+        p1=arr[n-1]*arr[n-2];
+        p2=arr[0]*arr[1];
+        if(p1>p2)
         {
-            if(arr[i]<11 || arr[i]>81)
-            {
-                high++;
-            }
-            else
-            {
-                low++;
-            }
+            sum=arr[n-1]+arr[n-2];
         }
-        high=(high+l-1)/l;
-        low=(low+l-1)/l;
-        System.out.print(high+low);
+        else
+        {
+            sum=arr[0]+arr[1];
+        }
+        System.out.print(sum);
     }
 }
+
