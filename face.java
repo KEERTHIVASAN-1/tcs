@@ -61,6 +61,34 @@
 //             System.out.print(maxcount);
 //     }
 // }
+// Zero ARRAy with AND operator
+// import java.util.*;
+// public class face
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int n=input.nextInt();
+//         int []arr=new int [n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=input.nextInt();
+//         }
+//         int res=arr[0];
+//         for(int i=1;i<n;i++)
+//         {
+//             res=res&arr[i];
+//         }
+//         int count=0;
+//         while(res!=0)
+//         {
+//             count=count+res&1;
+//             res>>=1;
+//         }
+//         System.out.print(count);
+//     }
+// }
+
 import java.util.*;
 public class face
 {
@@ -68,21 +96,20 @@ public class face
     {
         Scanner input=new Scanner(System.in);
         int n=input.nextInt();
-        int []arr=new int [n];
-        for(int i=0;i<n;i++)
-        {
-            arr[i]=input.nextInt();
-        }
-        int res=arr[0];
-        for(int i=1;i<n;i++)
-        {
-            res=res&arr[i];
-        }
+        int fact;
         int count=0;
-        while(res!=0)
+        while(n>0)
         {
-            count=count+res&1;
-            res>>=1;
+            fact=1;
+            for(int i=1;i<n;i++)
+            {
+                if(n%i==0)
+                {
+                fact=i;
+                }
+            }
+            n=n-fact;
+            count++;
         }
         System.out.print(count);
     }
