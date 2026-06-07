@@ -130,3 +130,34 @@
 //         }
 //     }
 // }
+AUTO IMMUNE DISEASE
+import java.util.*;
+public class face{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        int l=sc.nextInt();
+        int high=0;
+        int low=0;
+        int[] arr = new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i] = sc.nextInt();
+        }
+        for(int i=0;i<n;i++)
+        {
+            if(arr[i]<11 || arr[i]>81)
+            {
+                high++;
+            }
+            else
+            {
+                low++;
+            }
+        }
+        high=(high+l-1)/l;
+        low=(low+l-1)/l;
+        System.out.print(high+low);
+    }
+}

@@ -180,32 +180,33 @@
 //         System.out.print(sec_max);
 //     }
 // }
-import java.util.*;
-public class day1
-{
-    public static void main(String[]args)
-    {
-        Scanner input=new Scanner(System.in);
-        int n=input.nextInt();
-        int []arr=new int[n];
-        for(int i=0;i<n;i++)
-        {
-            arr[i]=input.nextInt();
-        }
-        int []brr=new int[n];
-        int j=0;
-        for(int i=0;i<n;i++)
-        {
-            if(arr[i]!=0)
-            {
-                brr[j]=arr[i];
-                j++;
-            }  
-        }
-        for(int i=0;i<n;i++)
-        {
-            System.out.print(brr[i]+" ");
-        }
-    }
-}
+// MOVE ZEROS
+// import java.util.*;
+// public class day1
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int n=input.nextInt();
+//         int []arr=new int[n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=input.nextInt();
+//         }
+//         int []brr=new int[n];
+//         int j=0;
+//         for(int i=0;i<n;i++)
+//         {
+//             if(arr[i]!=0)
+//             {
+//                 brr[j]=arr[i];
+//                 j++;
+//             }  
+//         }
+//         for(int i=0;i<n;i++)
+//         {
+//             System.out.print(brr[i]+" ");
+//         }
+//     }
+// }
 
