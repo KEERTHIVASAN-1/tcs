@@ -29,35 +29,61 @@
 //         System.out.print(box);
 //     }
 // }
-DONT COUNT ODD CHAR AND ONLY COUNT EVEN NUMEBR OF CHAR
+// DONT COUNT ODD CHAR AND ONLY COUNT EVEN NUMEBR OF CHAR
+// import java.util.*;
+// public class Main
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String s=input.nextLine();
+//         int count=1;
+//         int maxcount=0;
+//         for(int i=1;i<s.length();i++)
+//         {
+//             if(s.charAt(i)==s.charAt(i-1))
+//             {
+//                 count++;
+//             }
+//             else
+//             {
+//                 if(count%2==0)
+//                 {
+//                     maxcount+=count;
+//                 }
+//                 count=1;
+//             }
+//         }
+//         if(count%2==0)
+//                 {
+//                     maxcount+=count;
+//                 }
+//             System.out.print(maxcount);
+//     }
+// }
 import java.util.*;
-public class Main
+public class face
 {
     public static void main(String[]args)
     {
         Scanner input=new Scanner(System.in);
-        String s=input.nextLine();
-        int count=1;
-        int maxcount=0;
-        for(int i=1;i<s.length();i++)
+        int n=input.nextInt();
+        int []arr=new int [n];
+        for(int i=0;i<n;i++)
         {
-            if(s.charAt(i)==s.charAt(i-1))
-            {
-                count++;
-            }
-            else
-            {
-                if(count%2==0)
-                {
-                    maxcount+=count;
-                }
-                count=1;
-            }
+            arr[i]=input.nextInt();
         }
-        if(count%2==0)
-                {
-                    maxcount+=count;
-                }
-            System.out.print(maxcount);
+        int res=arr[0];
+        for(int i=1;i<n;i++)
+        {
+            res=res&arr[i];
+        }
+        int count=0;
+        while(res!=0)
+        {
+            count=count+res&1;
+            res>>=1;
+        }
+        System.out.print(count);
     }
 }
