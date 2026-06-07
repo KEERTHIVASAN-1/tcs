@@ -88,29 +88,44 @@
 //         System.out.print(count);
 //     }
 // }
-
+// MATHS GENIUS
+// import java.util.*;
+// public class face
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int n=input.nextInt();
+//         int fact;
+//         int count=0;
+//         while(n>0)
+//         {
+//             fact=1;
+//             for(int i=1;i<n;i++)
+//             {
+//                 if(n%i==0)
+//                 {
+//                 fact=i;
+//                 }
+//             }
+//             n=n-fact;
+//             count++;
+//         }
+//         System.out.print(count);
+//     }
+// }
 import java.util.*;
 public class face
 {
     public static void main(String[]args)
     {
         Scanner input=new Scanner(System.in);
-        int n=input.nextInt();
-        int fact;
-        int count=0;
-        while(n>0)
+        String s=input.nextLine();
+        char []ch=s.toCharArray();
+        Arrays.sort(ch);
+        for(int i=s.length()-1;i>=0;i--)
         {
-            fact=1;
-            for(int i=1;i<n;i++)
-            {
-                if(n%i==0)
-                {
-                fact=i;
-                }
-            }
-            n=n-fact;
-            count++;
+            System.out.print(ch[i]);
         }
-        System.out.print(count);
     }
 }
