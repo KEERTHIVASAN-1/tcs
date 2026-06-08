@@ -161,31 +161,58 @@
 //         System.out.print(high+low);
 //     }
 // }
+// ONLINE LOTTERY GAME
+// import java.util.*;
+// public class face{
+//     public static void main(String[] args)
+//     {
+//         Scanner input = new Scanner(System.in);
+//         int n = input.nextInt();
+//         int [] arr=new int[n];
+//         int p1,p2;
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=input.nextInt();
+//         }
+//         Arrays.sort(arr);
+//         int sum=0;
+//         p1=arr[n-1]*arr[n-2];
+//         p2=arr[0]*arr[1];
+//         if(p1>p2)
+//         {
+//             sum=arr[n-1]+arr[n-2];
+//         }
+//         else
+//         {
+//             sum=arr[0]+arr[1];
+//         }
+//         System.out.print(sum);
+//     }
+// }
+// MAX POSSIBLE NUMBER
 import java.util.*;
 public class face{
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int n = input.nextInt();
-        int [] arr=new int[n];
-        int p1,p2;
-        for(int i=0;i<n;i++)
+        String s=input.nextLine();
+        int [] arr=new int[10];
+        for(int i=0;i<10;i++)
         {
             arr[i]=input.nextInt();
         }
-        Arrays.sort(arr);
-        int sum=0;
-        p1=arr[n-1]*arr[n-2];
-        p2=arr[0]*arr[1];
-        if(p1>p2)
+        char []ch =s.toCharArray();
+        for(int i=0;i<ch.length;i++)
         {
-            sum=arr[n-1]+arr[n-2];
+            int d=(int)ch[i]-'0';
+            if(arr[d]>d)
+            {
+                d=arr[d];
+                ch[i]=(char)(d+'0');
+            }
         }
-        else
-        {
-            sum=arr[0]+arr[1];
-        }
-        System.out.print(sum);
+        System.out.print(new String(ch));
+
     }
 }
 
