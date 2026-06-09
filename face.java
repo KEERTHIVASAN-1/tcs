@@ -190,29 +190,61 @@
 //     }
 // }
 // MAX POSSIBLE NUMBER
+// import java.util.*;
+// public class face{
+//     public static void main(String[] args)
+//     {
+//         Scanner input = new Scanner(System.in);
+//         String s=input.nextLine();
+//         int [] arr=new int[10];
+//         for(int i=0;i<10;i++)
+//         {
+//             arr[i]=input.nextInt();
+//         }
+//         char []ch =s.toCharArray();
+//         for(int i=0;i<ch.length;i++)
+//         {
+//             int d=(int)ch[i]-'0';
+//             if(arr[d]>d)
+//             {
+//                 d=arr[d];
+//                 ch[i]=(char)(d+'0');
+//             }
+//         }
+//         System.out.print(new String(ch));
+
+//     }
+// }
 import java.util.*;
 public class face{
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
         String s=input.nextLine();
-        int [] arr=new int[10];
-        for(int i=0;i<10;i++)
+        
+        int count=1;
+        int max_count=0;
+        for(int i=1;i<s.length();i++)
         {
-            arr[i]=input.nextInt();
-        }
-        char []ch =s.toCharArray();
-        for(int i=0;i<ch.length;i++)
-        {
-            int d=(int)ch[i]-'0';
-            if(arr[d]>d)
+            if(s.charAt(i)==s.charAt(i-1))
             {
-                d=arr[d];
-                ch[i]=(char)(d+'0');
+                count++;
+            }
+            else
+            {
+                if(count%2==0)
+                {
+                    max_count=max_count+count;
+                }
+                count=1;  
             }
         }
-        System.out.print(new String(ch));
-
+        if(count%2==0)
+        {
+            max_count=max_count+count;
+        }
+        System.out.print(max_count);
     }
 }
+
 
