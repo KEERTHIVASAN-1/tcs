@@ -215,36 +215,92 @@
 
 //     }
 // }
-import java.util.*;
-public class face{
-    public static void main(String[] args)
-    {
-        Scanner input = new Scanner(System.in);
-        String s=input.nextLine();
+// CONSECUTIVE CHARACTERS
+// import java.util.*;
+// public class face{
+//     public static void main(String[] args)
+//     {
+//         Scanner input = new Scanner(System.in);
+//         String s=input.nextLine();
         
-        int count=1;
-        int max_count=0;
-        for(int i=1;i<s.length();i++)
-        {
-            if(s.charAt(i)==s.charAt(i-1))
-            {
-                count++;
-            }
-            else
-            {
-                if(count%2==0)
-                {
-                    max_count=max_count+count;
-                }
-                count=1;  
-            }
-        }
-        if(count%2==0)
-        {
-            max_count=max_count+count;
-        }
-        System.out.print(max_count);
-    }
-}
-
+//         int count=1;
+//         int max_count=0;
+//         for(int i=1;i<s.length();i++)
+//         {
+//             if(s.charAt(i)==s.charAt(i-1))
+//             {
+//                 count++;
+//             }
+//             else
+//             {
+//                 if(count%2==0)
+//                 {
+//                     max_count=max_count+count;
+//                 }
+//                 count=1;  
+//             }
+//         }
+//         if(count%2==0)
+//         {
+//             max_count=max_count+count;
+//         }
+//         System.out.print(max_count);
+//     }
+// }
+//NUMBER GAME
+// import java.util.*;
+// public class face
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int x=input.nextInt();
+//         int a=input.nextInt();
+//         boolean flag=false;
+//         int z;
+//         for(int n=1;n<x;n++)
+//         {
+//             z=x-(a*n);
+//             if(z>0 && n%z==0)
+//             {
+//                 System.out.print(n);
+//                 flag=true;
+//                 break;
+//             }
+//         }
+//         if(!flag)
+//         {
+//             System.out.print("None");
+//         }
+//     }
+// }
+// Lucky numebr FIRST 3 SUM THEN NEXT 3 SUM
+// import java.util.*;
+// public class Solution {
+//     public static void main(String[] args) {
+//         Scanner input=new Scanner(System.in);
+//         int l=input.nextInt();
+//         int m=input.nextInt();
+//         int count=0;
+//         for(int i=0;i<m;i++)
+//         {
+//             String s=input.next();
+//             int sum1=0;
+//             int sum2=0;
+//             for(int j=0;j<l;j++)
+//             {
+//                 sum1=sum1+s.charAt(j)-'0';
+//             }
+//             for(int k=l;k<2*l;k++)
+//             {
+//                 sum2=sum2+s.charAt(k)-'0';
+//             }
+//             if(sum1==sum2)
+//             {
+//                 count++;
+//             }
+//         }
+//           System.out.print(count);
+//     }
+// }
 
