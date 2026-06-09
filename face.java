@@ -303,4 +303,34 @@
 //           System.out.print(count);
 //     }
 // }
+//largest possible total.
+import java.util.*;
+public class face
+{
+    public static void main(String[]args)
+    {
+        Scanner input=new Scanner(System.in);
+        int n=input.nextInt();
+        int []arr=new int [n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=input.nextInt();
+        }
+        int sum;
+        int max_sum=arr[0];
+        for(int i=0;i<n;i++)
+        {
+            sum=0;
+            for(int j=i;j<n;j++)
+            {
+                sum=sum+arr[j];
+                if(sum>max_sum)
+                {
+                max_sum=sum;
+                }
+            }
+        }
+        System.out.print(max_sum);
+    }
+}
 
