@@ -304,33 +304,73 @@
 //     }
 // }
 //largest possible total.
+// import java.util.*;
+// public class face
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int n=input.nextInt();
+//         int []arr=new int [n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=input.nextInt();
+//         }
+//         int sum;
+//         int max_sum=arr[0];
+//         for(int i=0;i<n;i++)
+//         {
+//             sum=0;
+//             for(int j=i;j<n;j++)
+//             {
+//                 sum=sum+arr[j];
+//                 if(sum>max_sum)
+//                 {
+//                 max_sum=sum;
+//                 }
+//             }
+//         }
+//         System.out.print(max_sum);
+//     }
+// }
+//Lanes of city
 import java.util.*;
-public class face
+public class Main
 {
     public static void main(String[]args)
     {
         Scanner input=new Scanner(System.in);
         int n=input.nextInt();
-        int []arr=new int [n];
+        int a=input.nextInt();
+        int b=input.nextInt();
+        int c=input.nextInt();
+        int d=input.nextInt();
+        int ans=0;
+        boolean flag=false;
+        HashSet<Integer>set=new HashSet<>();
         for(int i=0;i<n;i++)
         {
-            arr[i]=input.nextInt();
+            int l1=b+(i*a);
+            set.add(l1);
         }
-        int sum;
-        int max_sum=arr[0];
         for(int i=0;i<n;i++)
         {
-            sum=0;
-            for(int j=i;j<n;j++)
+            int l2=d+(i*c);
+            if(set.contains(l2))
             {
-                sum=sum+arr[j];
-                if(sum>max_sum)
-                {
-                max_sum=sum;
-                }
-            }
+                ans=l2;
+                flag=true;
+                break;
+            }    
         }
-        System.out.print(max_sum);
+        if(flag)
+        {
+            System.out.print(ans);
+        }
+        else{
+            System.out.print("No same amount of fuel found");
+        }  
     }
 }
+
 
