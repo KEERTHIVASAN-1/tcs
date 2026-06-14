@@ -334,42 +334,72 @@
 //     }
 // }
 //Lanes of city
+// import java.util.*;
+// public class Main
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int n=input.nextInt();
+//         int a=input.nextInt();
+//         int b=input.nextInt();
+//         int c=input.nextInt();
+//         int d=input.nextInt();
+//         int ans=0;
+//         boolean flag=false;
+//         HashSet<Integer>set=new HashSet<>();
+//         for(int i=0;i<n;i++)
+//         {
+//             int l1=b+(i*a);
+//             set.add(l1);
+//         }
+//         for(int i=0;i<n;i++)
+//         {
+//             int l2=d+(i*c);
+//             if(set.contains(l2))
+//             {
+//                 ans=l2;
+//                 flag=true;
+//                 break;
+//             }    
+//         }
+//         if(flag)
+//         {
+//             System.out.print(ans);
+//         }
+//         else{
+//             System.out.print("No same amount of fuel found");
+//         }  
+//     }
+// }
 import java.util.*;
-public class Main
+public class face
 {
     public static void main(String[]args)
     {
         Scanner input=new Scanner(System.in);
         int n=input.nextInt();
-        int a=input.nextInt();
-        int b=input.nextInt();
-        int c=input.nextInt();
-        int d=input.nextInt();
-        int ans=0;
-        boolean flag=false;
-        HashSet<Integer>set=new HashSet<>();
+        int last=0;
         for(int i=0;i<n;i++)
         {
-            int l1=b+(i*a);
-            set.add(l1);
-        }
-        for(int i=0;i<n;i++)
-        {
-            int l2=d+(i*c);
-            if(set.contains(l2))
+            int sum=0;
+            int s=input.nextInt();
+            int temp=s;
+            while(temp>0)
             {
-                ans=l2;
-                flag=true;
-                break;
-            }    
+                last=temp%10;
+                sum=sum+last;
+                temp=temp/10;
+            }
+            if(s%sum==0)
+            {
+                System.out.println("Good Number");
+            }
+            else
+            {
+                System.out.println("Bad Number");
+            }
         }
-        if(flag)
-        {
-            System.out.print(ans);
-        }
-        else{
-            System.out.print("No same amount of fuel found");
-        }  
     }
 }
 
