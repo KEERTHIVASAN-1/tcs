@@ -402,29 +402,45 @@
 //         }
 //     }
 // }
-import java.util.*;
-public class face
-{
-    public static void main(String[]args)
-    {
-        Scanner input=new Scanner(System.in);
-        String s1=input.nextLine();
-        String s2=input.nextLine();
-        HashSet <Character> set=new HashSet<>();
-        for(int i=0;i<s2.length();i++)
-        {
-            set.add(s2.charAt(i));
-        }
-        int count=0;
-        for(int j=0;j<s1.length();j++)
-        {
-            if(set.contains(s1.charAt(j)))
-            {
-                count++;
-            }
-        }
-        System.out.print(count);
-    }
-}
-
+//Count Character Occurrences"
+// import java.util.*;
+// public class face
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String s1=input.nextLine();
+//         String s2=input.nextLine();
+//         HashSet <Character> set=new HashSet<>();
+//         for(int i=0;i<s2.length();i++)
+//         {
+//             set.add(s2.charAt(i));
+//         }
+//         int count=0;
+//         for(int j=0;j<s1.length();j++)
+//         {
+//             if(set.contains(s1.charAt(j)))
+//             {
+//                 count++;
+//             }
+//         }
+//         System.out.print(count);
+//     }
+// }
+//HANDSHAKE
+// import java.util.*;
+// public class face
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int n=input.nextInt();
+//         int ans=0;
+//         for(int i=0;i<n;i++)
+//         {
+//             ans=(n*(n-1)/2);
+//         }
+//         System.out.print(ans);
+//     }
+// }
 
