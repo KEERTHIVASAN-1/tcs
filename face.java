@@ -372,34 +372,58 @@
 //         }  
 //     }
 // }
+// import java.util.*;
+// public class face
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int n=input.nextInt();
+//         int last=0;
+//         for(int i=0;i<n;i++)
+//         {
+//             int sum=0;
+//             int s=input.nextInt();
+//             int temp=s;
+//             while(temp>0)
+//             {
+//                 last=temp%10;
+//                 sum=sum+last;
+//                 temp=temp/10;
+//             }
+//             if(s%sum==0)
+//             {
+//                 System.out.println("Good Number");
+//             }
+//             else
+//             {
+//                 System.out.println("Bad Number");
+//             }
+//         }
+//     }
+// }
 import java.util.*;
 public class face
 {
     public static void main(String[]args)
     {
         Scanner input=new Scanner(System.in);
-        int n=input.nextInt();
-        int last=0;
-        for(int i=0;i<n;i++)
+        String s1=input.nextLine();
+        String s2=input.nextLine();
+        HashSet <Character> set=new HashSet<>();
+        for(int i=0;i<s2.length();i++)
         {
-            int sum=0;
-            int s=input.nextInt();
-            int temp=s;
-            while(temp>0)
+            set.add(s2.charAt(i));
+        }
+        int count=0;
+        for(int j=0;j<s1.length();j++)
+        {
+            if(set.contains(s1.charAt(j)))
             {
-                last=temp%10;
-                sum=sum+last;
-                temp=temp/10;
-            }
-            if(s%sum==0)
-            {
-                System.out.println("Good Number");
-            }
-            else
-            {
-                System.out.println("Bad Number");
+                count++;
             }
         }
+        System.out.print(count);
     }
 }
 
