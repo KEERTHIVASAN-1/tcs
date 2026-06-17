@@ -443,4 +443,38 @@
 //         System.out.print(ans);
 //     }
 // }
+import java.util.*;
+public class face
+{
+    public static void main(String[]args)
+    {
+        Scanner input=new Scanner(System.in);
+        int n=input.nextInt();
+        int []arr=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=input.nextInt();
+        }
+        int k=input.nextInt();
+        int []brr=new int [n-k+1];
+        int p=0;
+        for(int i=0;i<=n-k;i++)
+        {
+            int min=arr[i];
+            for(int j=i;j<i+k;j++)
+            {
+                if(arr[j]<min)
+                {
+                    min=arr[j];
+                }
+            }
+            brr[p]=min;
+            p++;
+        }
+        for(int i=0;i<n-k+1;i++)
+        {
+            System.out.print(brr[i]+" ");
+        }
+    }
+}
 
