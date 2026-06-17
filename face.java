@@ -443,38 +443,61 @@
 //         System.out.print(ans);
 //     }
 // }
+//MINIMUM IN A SUBARRAY OF K ELEMENTS
+// import java.util.*;
+// public class face
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int n=input.nextInt();
+//         int []arr=new int[n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=input.nextInt();
+//         }
+//         int k=input.nextInt();
+//         int []brr=new int [n-k+1];
+//         int p=0;
+//         for(int i=0;i<=n-k;i++)
+//         {
+//             int min=arr[i];
+//             for(int j=i;j<i+k;j++)
+//             {
+//                 if(arr[j]<min)
+//                 {
+//                     min=arr[j];
+//                 }
+//             }
+//             brr[p]=min;
+//             p++;
+//         }
+//         for(int i=0;i<n-k+1;i++)
+//         {
+//             System.out.print(brr[i]+" ");
+//         }
+//     }
+// }
+//to print 2 decimals by decimal to perform opertations
 import java.util.*;
 public class face
 {
     public static void main(String[]args)
     {
         Scanner input=new Scanner(System.in);
-        int n=input.nextInt();
-        int []arr=new int[n];
-        for(int i=0;i<n;i++)
+        int last;
+        int rev=0;
+        double n=input.nextDouble();
+        int integer=(int)n;
+        double decimal=n-integer;
+        while(integer>0)
         {
-            arr[i]=input.nextInt();
+            last=integer%10;
+            rev=rev*10+last;
+            integer=integer/10;
         }
-        int k=input.nextInt();
-        int []brr=new int [n-k+1];
-        int p=0;
-        for(int i=0;i<=n-k;i++)
-        {
-            int min=arr[i];
-            for(int j=i;j<i+k;j++)
-            {
-                if(arr[j]<min)
-                {
-                    min=arr[j];
-                }
-            }
-            brr[p]=min;
-            p++;
-        }
-        for(int i=0;i<n-k+1;i++)
-        {
-            System.out.print(brr[i]+" ");
-        }
+        double ans= (rev+decimal)/2;
+        System.out.printf("%.2f",ans);
     }
 }
 
