@@ -51,3 +51,27 @@
     //         }
     //     }
     // }
+    //SUM OF DIGITS OF A NUMBER
+     import java.util.*;
+
+    public class striver {
+        public static void main(String[] args) {
+            Scanner input = new Scanner(System.in);
+            int n = input.nextInt();
+            int last;
+            int sum;
+            while(n>=10)
+            {
+                sum=0;
+                while(n>0)
+                {
+                    last=n%10;
+                    sum=sum+last;
+                    n=n/10;
+                }
+                n=sum;
+            }
+            System.out.print(n);
+        }
+    }
+
