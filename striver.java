@@ -105,38 +105,55 @@
 //     }
 // }
 //PRIME IN A RANGE
-import java.util.*;
+// import java.util.*;
 
-public class striver
- {
-    public static void main(String[] args) 
-    {
-        Scanner input = new Scanner(System.in);
-        int n = input.nextInt();
-        int m= input.nextInt();
-        int temp;
-        for(int k=n;k<=m;k++)
-        {
-            boolean flag=true;
-             if(k<2)
-            {
-                flag=false;
-                continue;
-            }
-            for(int i=2;i*i<=k;i++)
-            {
-                if(k%i==0)
-                {
-                    flag=false;
-                    break;
-                }
-            }
-            if(flag)
-            {
-                System.out.print(k+ " ");
-            }
-        }
+// public class striver
+//  {
+//     public static void main(String[] args) 
+//     {
+//         Scanner input = new Scanner(System.in);
+//         int n = input.nextInt();
+//         int m= input.nextInt();
+//         int temp;
+//         for(int k=n;k<=m;k++)
+//         {
+//             boolean flag=true;
+//              if(k<2)
+//             {
+//                 flag=false;
+//                 continue;
+//             }
+//             for(int i=2;i*i<=k;i++)
+//             {
+//                 if(k%i==0)
+//                 {
+//                     flag=false;
+//                     break;
+//                 }
+//             }
+//             if(flag)
+//             {
+//                 System.out.print(k+ " ");
+//             }
+//         }
+//     }
+// } 
+//factors of a number
+// import java.util.*;
 
-    }
-}  
+// public class striver
+//  {
+//     public static void main(String[] args) 
+//     {
+//         Scanner input = new Scanner(System.in);
+//         int n = input.nextInt();
+//         for(int i=1;i<=n;i++)
+//         {
+//             if(n%i==0)
+//             {
+//                 System.out.print(i+" ");
+//             }
+//         }
+//     }
+// }
     
