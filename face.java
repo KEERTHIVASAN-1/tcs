@@ -479,25 +479,25 @@
 //     }
 // }
 //to print 2 decimals by decimal to perform opertations
-import java.util.*;
-public class face
-{
-    public static void main(String[]args)
-    {
-        Scanner input=new Scanner(System.in);
-        int last;
-        int rev=0;
-        double n=input.nextDouble();
-        int integer=(int)n;
-        double decimal=n-integer;
-        while(integer>0)
-        {
-            last=integer%10;
-            rev=rev*10+last;
-            integer=integer/10;
-        }
-        double ans= (rev+decimal)/2;
-        System.out.printf("%.2f",ans);
-    }
-}
+// import java.util.*;
+// public class face
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int last;
+//         int rev=0;
+//         double n=input.nextDouble();
+//         int integer=(int)n;
+//         double decimal=n-integer;
+//         while(integer>0)
+//         {
+//             last=integer%10;
+//             rev=rev*10+last;
+//             integer=integer/10;
+//         }
+//         double ans= (rev+decimal)/2;
+//         System.out.printf("%.2f",ans);
+//     }
+// }
 
