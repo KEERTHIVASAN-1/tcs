@@ -360,3 +360,44 @@
 //         System.out.print(min);
 //     }
 // }
+//SECOND MIN,SECOND MAX 
+import java.util.*;
+public class striver
+{
+    public static void main(String[]args)
+    {
+        Scanner input=new Scanner(System.in);
+        String [] s=input.nextLine().split(" ");
+        int n=s.length;
+        int []arr=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=Integer.parseInt(s[i]);
+        }
+        int min=arr[0];
+        for(int i=0;i<n;i++)
+        {
+            if(arr[i]>min)
+            {
+                min=arr[i];
+            }
+        }
+        int secondmin=arr[0];
+        for(int i=0;i<n;i++)
+        {
+            if(arr[i]<min)
+            {
+                secondmin=arr[i];
+                break;
+            }
+        }
+        for(int i=0;i<n;i++)
+        {
+            if(arr[i]<min && arr[i]>secondmin)
+            {
+                secondmin=arr[i];
+            }
+        }
+        System.out.print(secondmin);
+    }
+}
