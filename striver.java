@@ -156,32 +156,59 @@
 //         }
 //     }
 // }
-import java.util.*;
-public class striver
- {
-    public static void main(String[] args) 
-    {
-        Scanner input = new Scanner(System.in);
-        int n = input.nextInt();
-        for(int i=2;i<=n;i++)
-        {
-            boolean flag=true;
-            if(n%i==0)
-            {
-                for(int j=2;j*j<=i;j++)
-                {
-                    if(i%j==0)
-                    {
-                        flag=false;
-                        break;
-                    }
-                }
-                if(flag)
-                {
-                    System.out.print(i+" ");
-                }
-            }
-        }
-    }
-}
+//Print all Prime Factors of the given number
+// import java.util.*;
+// public class striver
+//  {
+//     public static void main(String[] args) 
+//     {
+//         Scanner input = new Scanner(System.in);
+//         int n = input.nextInt();
+//         for(int i=2;i<=n;i++)
+//         {
+//             boolean flag=true;
+//             if(n%i==0)
+//             {
+//                 for(int j=2;j*j<=i;j++)
+//                 {
+//                     if(i%j==0)
+//                     {
+//                         flag=false;
+//                         break;
+//                     }
+//                 }
+//                 if(flag)
+//                 {
+//                     System.out.print(i+" ");
+//                 }
+//             }
+//         }
+//     }
+// }
+//GREATEST OF 3 NUMEBRS
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         double n=input.nextDouble();
+//         double m=input.nextDouble();
+//         double s=input.nextDouble();
+//         double max;
+//         if(n>=m && n>=s)
+//         {
+//             max=n;
+//         }
+//         else if(m>=n && m>=s)
+//         {
+//             max=m;
+//         }
+//         else
+//         {
+//             max=s;
+//         }
+//         System.out.print(max);
+//     }
+// }
     
