@@ -211,4 +211,37 @@
 //         System.out.print(max);
 //     }
 // }
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int n=input.nextInt();
+//         int org=n;
+//         int og=n;
+//         int last=0 ;
+//         int sum=0 ;
+//         int count=0;
+//         while(n>0)
+//         {
+//             count++;
+//             n=n/10;
+//         }
+//             while(org>0)
+//             {
+//                 last=org%10;
+//                 sum=sum+(int)(Math.pow(last,count));
+//                 org=org/10;
+//             }
+//         if(sum==og)
+//         {
+//             System.out.print(true);
+//         }
+//         else
+//         {
+//             System.out.print(false);
+//         }
+//     }
+// }
     
