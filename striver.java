@@ -304,33 +304,59 @@
 //         }
 //     }
 // }
-import java.util.*;
+//automorphic
+// import java.util.*;
 
-public class striver {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+// public class striver {
+//     public static void main(String[] args) {
+//         Scanner input = new Scanner(System.in);
 
-        int n = input.nextInt();
-        int sq = n * n;
+//         int n = input.nextInt();
+//         int sq = n * n;
 
-        int count = 0;
-        int temp = n;
+//         int count = 0;
+//         int temp = n;
 
-        while (temp > 0) {
-            count++;
-            temp = temp / 10;
-        }
+//         while (temp > 0) {
+//             count++;
+//             temp = temp / 10;
+//         }
 
-        int power = 1;
+//         int power = 1;
 
-        for (int i = 1; i <= count; i++) {
-            power = power * 10;
-        }
+//         for (int i = 1; i <= count; i++) {
+//             power = power * 10;
+//         }
 
-        if (sq % power == n) {
-            System.out.print("Automorphic Number");
-        } else {
-            System.out.print("Not Automorphic Number");
-        }
-    }
-}
+//         if (sq % power == n) {
+//             System.out.print("Automorphic Number");
+//         } else {
+//             System.out.print("Not Automorphic Number");
+//         }
+//     }
+// }
+//SMALLEST NUMBER
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String []s=input.nextLine().split(" ");
+//         int n=s.length;
+//         int []arr=new int[n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=Integer.parseInt(s[i]);
+//         }
+//         int min=arr[0];
+//         for(int i=0;i<n;i++)
+//         {
+//             if(arr[i]<min)
+//             {
+//                 min=arr[i];
+//             }
+//         }
+//         System.out.print(min);
+//     }
+// }
