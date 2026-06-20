@@ -423,30 +423,83 @@
 //         System.out.printf("%.1f",avg);
 //     }
 // }
-import java.util.*;
-public class striver
-{
-    public static void main(String[]args)
-    {
-        Scanner input=new Scanner(System.in);
-        String []s=input.nextLine().split(" ");
-        int n=s.length;
-        int []arr=new int[n];
-        for(int i=0;i<n;i++)
-        {
-            arr[i]=Integer.parseInt(s[i]);
-        }
-        int k=input.nextInt();
-        for(int i=0;i<n;i++)
-        {
-            if(k==arr[i])
-            {
-                System.out.print(i);
-                return;
-            }
-        }
-        System.out.print(-1);
-    }
-}
+//search a element
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String []s=input.nextLine().split(" ");
+//         int n=s.length;
+//         int []arr=new int[n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=Integer.parseInt(s[i]);
+//         }
+//         int k=input.nextInt();
+//         for(int i=0;i<n;i++)
+//         {
+//             if(k==arr[i])
+//             {
+//                 System.out.print(i);
+//                 return;
+//             }
+//         }
+//         System.out.print(-1);
+//     }
+// }
+///Reverse a array
 
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+        
+//         int n=input.nextInt();
+//         int []arr=new int[n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=input.nextInt();
+//         }
+//         for(int i=n-1;i>=0;i--)
+//         {
+//             System.out.print(arr[i]+" ");
+//         }
+//     }
+// }
+//reverse with swap
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+        
+//         int n=input.nextInt();
+//         int []arr=new int[n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=input.nextInt();
+//         }
+//         int temp=0;
+//         int p1=0;
+//         int p2=n-1;
+//         while(p1<p2)
+//         {
+//             temp=arr[p1];
+//             arr[p1]=arr[p2];
+//             arr[p2]=temp;
+//             p1++;
+//             p2--;
+
+//         }
+//         for(int i=0;i<n;i++)
+//         {
+//             System.out.print(arr[i]+" ");
+//         }
+//     }
+// }
 
