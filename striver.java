@@ -401,25 +401,52 @@
 //         System.out.print(secondmin);
 //     }
 // }
+//avg of array
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int n=input.nextInt();
+//         int []arr=new int[n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=input.nextInt();
+//         }
+//         int sum=0;
+//         for(int i=0;i<n;i++)
+//         {
+//             sum=sum+arr[i];
+//         }
+//         double avg=(double)sum/n;
+//         System.out.printf("%.1f",avg);
+//     }
+// }
 import java.util.*;
 public class striver
 {
     public static void main(String[]args)
     {
         Scanner input=new Scanner(System.in);
-        int n=input.nextInt();
+        String []s=input.nextLine().split(" ");
+        int n=s.length;
         int []arr=new int[n];
         for(int i=0;i<n;i++)
         {
-            arr[i]=input.nextInt();
+            arr[i]=Integer.parseInt(s[i]);
         }
-        int sum=0;
+        int k=input.nextInt();
         for(int i=0;i<n;i++)
         {
-            sum=sum+arr[i];
+            if(k==arr[i])
+            {
+                System.out.print(i);
+                return;
+            }
         }
-        double avg=(double)sum/n;
-        System.out.printf("%.1f",avg);
+        System.out.print(-1);
     }
 }
+
 
