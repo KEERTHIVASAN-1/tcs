@@ -611,4 +611,29 @@
 //         }
 //     }
 // }
+//Frequency of Elements
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String []s=input.nextLine().split(" ");
+//         int n=s.length;
+//         int []arr=new int[n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=Integer.parseInt(s[i]);
+//         }
+//         LinkedHashMap<Integer,Integer>map=new LinkedHashMap<>();
+//         for(int i=0;i<n;i++)
+//         {
+//             map.put(arr[i],map.getOrDefault(arr[i],0)+1);
+//         }
+//         for(int i:map.keySet())
+//         {
+//             System.out.println(i+" "+map.get(i));
+//         }
+//     }
+// }
 
