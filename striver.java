@@ -636,6 +636,35 @@
 //         }
 //     }
 // }
+//-   Remove Duplicates (Sorted) [x]  Remove Duplicates (Unsorted)
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String []s=input.nextLine().split(" ");
+//         int n=s.length;
+//         int []arr=new int[n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=Integer.parseInt(s[i]);
+//         }
+//         LinkedHashSet<Integer>set=new LinkedHashSet<>();
+//         for(int i=0;i<n;i++)
+//         {
+//             set.add(arr[i]);
+//         }
+//         for(int i:set)
+//         {
+//             System.out.print(i+" ");
+//         }
+//         System.out.println();
+//         int t=set.size();
+//         System.out.println(t);
+//     }
+// }
+//Find all repeating elements in an array OR Find all non repeating elements in an array
 import java.util.*;
 public class striver
 {
@@ -649,20 +678,19 @@ public class striver
         {
             arr[i]=Integer.parseInt(s[i]);
         }
-        LinkedHashSet<Integer>set=new LinkedHashSet<>();
+        LinkedHashMap<Integer,Integer>map=new LinkedHashMap<>();
         for(int i=0;i<n;i++)
         {
-            set.add(arr[i]);
+            map.put(arr[i],map.getOrDefault(arr[i],0)+1);
         }
-        for(int i:set)
+        for(int i:map.keySet())
         {
+            if(map.get(i)==1)
             System.out.print(i+" ");
         }
-        System.out.println();
-        int t=set.size();
-        System.out.println(t);
     }
 }
+
 
 
 
