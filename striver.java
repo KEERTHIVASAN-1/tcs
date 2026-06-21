@@ -539,4 +539,31 @@
 //         }
 //     }
 // }
+//Median of Array
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String []s=input.nextLine().split(" ");
+//         int n=s.length;
+//         int []arr=new int[n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=Integer.parseInt(s[i]);
+//         }
+//         double median=0;
+//         Arrays.sort(arr);
+//         if(n%2==0)
+//         {
+//             median=(double)((arr[n/2-1])+(arr[n/2]))/2;
+//         }
+//         else
+//         {
+//             median=arr[(n/2)];
+//         }
+//         System.out.print(median);
+//     }
+// }
 
