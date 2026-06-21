@@ -566,4 +566,25 @@
 //         System.out.print(median);
 //     }
 // }
-
+import java.util.*;
+public class striver
+{
+    public static void main(String[]args)
+    {
+        Scanner input=new Scanner(System.in);
+        int n=input.nextInt();
+        int m=input.nextInt();
+        int gcd=1;
+        int lcm=1;
+        for(int i=1;i<=Math.min(n,m);i++)
+        {
+            if(n%i==0 && m%i==0)
+            {
+                gcd=i;
+            }
+        }
+        lcm=(n*m)/gcd;
+        System.out.println(gcd);
+        System.out.println(lcm);
+    }
+}
