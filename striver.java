@@ -502,4 +502,41 @@
 //         }
 //     }
 // }
+//Add element in array
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int n=input.nextInt();
+//         input.nextLine();
+//         String []s=input.nextLine().split(" ");
+//         int []arr=new int[n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=Integer.parseInt(s[i]);
+//         }
+//         int first=input.nextInt();
+//         int last=input.nextInt();
+//         int element=input.nextInt();
+//         int position=input.nextInt();
+//         int []ans=new int [n+3];
+//         ans[0]=first;
+//         for(int i=0;i<n;i++)
+//         {
+//             ans[i+1]=arr[i];
+//         }
+//         for(int i=n;i>=position-1;i--)
+//         {
+//             ans[i+1]=ans[i];
+//         }
+//         ans[position-1]=element;
+//         ans[n+2]=last;
+//         for(int i=0;i<n+3;i++)
+//         {
+//             System.out.print(ans[i]+ " ");
+//         }
+//     }
+// }
 
