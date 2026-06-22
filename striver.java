@@ -740,24 +740,66 @@
 //             System.out.print(Arrays.toString(ans));
 //     }
 // }
-import java.util.*;
-public class striver
-{
-    public static void main(String[] args)
-    {
-        Scanner input = new Scanner(System.in);
-        String a = input.nextLine();
-        String b = input.nextLine();
-        if((a+" "+a).contains(b))
-        {
-            System.out.println("Yes");
-        }
-        else
-        {
-            System.out.println("No");
-        }
-    }
-}
+//check circular rotation
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[] args)
+//     {
+//         Scanner input = new Scanner(System.in);
+//         String a = input.nextLine();
+//         String b = input.nextLine();
+//         if((a+" "+a).contains(b))
+//         {
+//             System.out.println("Yes");
+//         }
+//         else
+//         {
+//             System.out.println("No");
+//         }
+//     }
+// }
+//Finding Equilibrium index in an array
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[] args)
+//     {
+//         Scanner input = new Scanner(System.in);
+//         int n=input.nextInt();
+//         int []arr=new int[n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=input.nextInt();
+//         }
+//         boolean flag=false;
+//         for(int i=0;i<n;i++)
+//         {
+//             int sum1=0;
+//             int sum2=0;
+//             for(int j=0;j<i;j++)
+//             {
+//                 sum1=sum1+arr[j];
+//             }
+//             for(int k=i+1;k<n;k++)
+//             {
+//                 sum2=sum2+arr[k];
+//             }
+//             if(sum1==sum2)
+//             {
+//                 System.out.print(i);
+//                 flag=true;
+//                 break;
+//             }
+//         }
+//         if(!flag)
+//         {
+//             System.out.print(-1);
+//         }
+//     }
+// }
+
+
 
 
 
