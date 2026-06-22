@@ -691,53 +691,71 @@
 //     }
 // }
 //LEFT ROTATE,RIGHT ROTATE
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String []s=input.nextLine().split(" ");
+//         int n=s.length;
+//         int []arr=new int[n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=Integer.parseInt(s[i]);
+//         }
+//         int k=input.nextInt();
+//         input.nextLine();
+//         String st=input.nextLine();
+//         int []ans=new int[n];
+//         int p=0;
+//         int q=0;
+//         if(st.equals("left"))
+//         {
+//             for(int i=k;i<n;i++)
+//             {
+//                 ans[p]=arr[i];
+//                 p++;
+//             }
+//             for(int i=0;i<k;i++)
+//             {
+//                 ans[p]=arr[i];
+//                 p++;
+//             }
+//         }
+
+//         else if(st.equals("right"))
+//         {
+//             for(int i=n-k;i<n;i++)
+//             {
+//                 ans[q]=arr[i];
+//                 q++;
+//             }
+//             for(int i=0;i<n-k;i++)
+//             {
+//                 ans[q]=arr[i];
+//                 q++;
+//             }
+//         }
+//             System.out.print(Arrays.toString(ans));
+//     }
+// }
 import java.util.*;
 public class striver
 {
-    public static void main(String[]args)
+    public static void main(String[] args)
     {
-        Scanner input=new Scanner(System.in);
-        String []s=input.nextLine().split(" ");
-        int n=s.length;
-        int []arr=new int[n];
-        for(int i=0;i<n;i++)
+        Scanner input = new Scanner(System.in);
+        String a = input.nextLine();
+        String b = input.nextLine();
+        if((a+" "+a).contains(b))
         {
-            arr[i]=Integer.parseInt(s[i]);
+            System.out.println("Yes");
         }
-        int k=input.nextInt();
-        input.nextLine();
-        String st=input.nextLine();
-        int []ans=new int[n];
-        int p=0;
-        int q=0;
-        if(st.equals("left"))
+        else
         {
-            for(int i=k;i<n;i++)
-            {
-                ans[p]=arr[i];
-                p++;
-            }
-            for(int i=0;i<k;i++)
-            {
-                ans[p]=arr[i];
-                p++;
-            }
+            System.out.println("No");
         }
-
-        else if(st.equals("right"))
-        {
-            for(int i=n-k;i<n;i++)
-            {
-                ans[q]=arr[i];
-                q++;
-            }
-            for(int i=0;i<n-k;i++)
-            {
-                ans[q]=arr[i];
-                q++;
-            }
-        }
-            System.out.print(Arrays.toString(ans));
     }
 }
 
