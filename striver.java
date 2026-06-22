@@ -665,6 +665,32 @@
 //     }
 // }
 //Find all repeating elements in an array OR Find all non repeating elements in an array
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String []s=input.nextLine().split(" ");
+//         int n=s.length;
+//         int []arr=new int[n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=Integer.parseInt(s[i]);
+//         }
+//         LinkedHashMap<Integer,Integer>map=new LinkedHashMap<>();
+//         for(int i=0;i<n;i++)
+//         {
+//             map.put(arr[i],map.getOrDefault(arr[i],0)+1);
+//         }
+//         for(int i:map.keySet())
+//         {
+//             if(map.get(i)==1)
+//             System.out.print(i+" ");
+//         }
+//     }
+// }
+//LEFT ROTATE,RIGHT ROTATE
 import java.util.*;
 public class striver
 {
@@ -678,18 +704,43 @@ public class striver
         {
             arr[i]=Integer.parseInt(s[i]);
         }
-        LinkedHashMap<Integer,Integer>map=new LinkedHashMap<>();
-        for(int i=0;i<n;i++)
+        int k=input.nextInt();
+        input.nextLine();
+        String st=input.nextLine();
+        int []ans=new int[n];
+        int p=0;
+        int q=0;
+        if(st.equals("left"))
         {
-            map.put(arr[i],map.getOrDefault(arr[i],0)+1);
+            for(int i=k;i<n;i++)
+            {
+                ans[p]=arr[i];
+                p++;
+            }
+            for(int i=0;i<k;i++)
+            {
+                ans[p]=arr[i];
+                p++;
+            }
         }
-        for(int i:map.keySet())
+
+        else if(st.equals("right"))
         {
-            if(map.get(i)==1)
-            System.out.print(i+" ");
+            for(int i=n-k;i<n;i++)
+            {
+                ans[q]=arr[i];
+                q++;
+            }
+            for(int i=0;i<n-k;i++)
+            {
+                ans[q]=arr[i];
+                q++;
+            }
         }
+            System.out.print(Arrays.toString(ans));
     }
 }
+
 
 
 
