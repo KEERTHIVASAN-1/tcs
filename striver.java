@@ -798,6 +798,30 @@
 //         }
 //     }
 // }
+//Symmetric pairs
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[] args)
+//     {
+//         Scanner input = new Scanner(System.in);
+//         int n=input.nextInt();
+//         LinkedHashMap<Integer,Integer>map=new LinkedHashMap<>();
+//         for(int i=0;i<n;i++)
+//         {
+//             int x=input.nextInt();
+//             int y=input.nextInt();
+//             if(map.containsKey(y) && map.get(y)==x)
+//             {
+//                 System.out.print(x+"->"+y);
+//             }
+//             else
+//             {
+//                 map.put(x,y);
+//             }
+//         }
+//     }
+// }
 
 
 
