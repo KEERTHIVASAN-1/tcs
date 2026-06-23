@@ -822,6 +822,57 @@
 //         }
 //     }
 // }
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[] args)
+//     {
+//         Scanner input = new Scanner(System.in);
+//         int n=input.nextInt();
+//         int []arr=new int [n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=input.nextint();
+//         }
+//         LinkedHashMap<Integer,Integer>map=new LinkedHashMap<>();
+//         for(int i=0;i<n;i++)
+//         {
+//             map.put(arr[i],map.getOrDefault(arr[i],0)+1);
+//         }
+        
+//     }
+// }
+//Replace elements by its rank in the array
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[] args)
+//     {
+//         Scanner input = new Scanner(System.in);
+//         int n=input.nextInt();
+//         int []arr=new int [n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=input.nextInt();
+//         }
+//         int []brr=arr.clone();
+//         Arrays.sort(arr);
+//         LinkedHashMap<Integer,Integer>map=new LinkedHashMap<>();
+//         int rank=1;
+//         for(int i=0;i<n;i++)
+//         {
+//             if(!map.containsKey(arr[i]))
+//             {
+//             map.put(arr[i],rank);
+//             rank++;
+//             }
+//         }
+//         for(int i:brr)
+//         {
+//             System.out.println(i+" -> "+map.get(i)+" ");
+//         }
+//     }
+// }
 
 
 
