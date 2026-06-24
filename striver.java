@@ -873,6 +873,72 @@
 //         }
 //     }
 // }
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[] args)
+//     {
+//         Scanner input = new Scanner(System.in);
+//         int n=input.nextInt();
+//         int []arr=new int [n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=input.nextInt();
+//         }
+//         int max=Integer.MIN_VALUE;
+//         for(int i=0;i<n;i++)
+//         {
+//             int product=1;
+//             for(int j=i;j<n;j++)
+//             {
+//                 product=product*arr[j];
+//                 if(product>max)
+//                 {
+//                     max=product;
+//                 }
+//             }
+//         }
+//         System.out.print(max);
+//     }
+// }
+//subset of another array
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[] args)
+//     {
+//         Scanner input = new Scanner(System.in);
+//         String []s1=input.nextLine().split(" ");
+//         String []s2=input.nextLine().split(" ");
+//         int n1=s1.length;
+//         int n2=s2.length;
+//         int []arr1=new int [n1];
+//         for(int i=0;i<n1;i++)
+//         {
+//             arr1[i]=Integer.parseInt(s1[i]);
+//         }
+//         int []arr2=new int [n2];
+//         for(int i=0;i<n2;i++)
+//         {
+//             arr2[i]=Integer.parseInt(s2[i]);
+//         }
+//         HashSet<Integer>set=new HashSet<>();
+//         for(int i=0;i<n2;i++)
+//         {
+//             set.add(arr2[i]);
+//         }
+//         for(int i=0;i<n1;i++)
+//         {
+//             if(!set.contains(arr1[i]))
+//             {
+//                 System.out.print("arr1 is not subset of arr2");
+//                 return;
+//             }
+//         }
+//         System.out.print("arr1 is a subset of arr2");
+//     }
+// }
+
 
 
 
