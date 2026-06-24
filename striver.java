@@ -997,7 +997,7 @@
 //         String s = input.nextLine();
 //         s=s.toLowerCase();
 //         String rev = "";
-//         for(int i=s.length()-1;i>=0;i--)
+//         for(int i=s.length();i>=0;i--)
 //         {
 //             rev=rev+s.charAt(i);
 //         }
@@ -1055,6 +1055,49 @@
 //         Scanner input = new Scanner(System.in);
 //         char ch=input.next().charAt(0);
 //         System.out.print((int)ch);
+//     }
+// }
+//REMOVE VOWEL
+// import java.util.*;
+
+// public class striver
+// {
+//     public static void main(String[] args)
+//     {
+//         Scanner input = new Scanner(System.in);
+//         String s=input.nextLine();
+//         String another="";
+//         for(int i=0;i<=s.length()-1;i++)
+//         {
+//             char ch =s.charAt(i);
+//             if(ch!='a' && ch!='e' &&ch!='i' &&ch!='o' &&ch!='u' 
+//              &&ch!='A' &&ch!='E' &&ch!='I' &&ch!='O' &&ch!='U')
+//              {
+//                 another=another +ch;
+//              }
+//         }
+//         System.out.print(another);
+//     }
+// }
+//REMOVE SPACES
+// import java.util.*;
+
+// public class striver
+// {
+//     public static void main(String[] args)
+//     {
+//         Scanner input = new Scanner(System.in);
+//         String s=input.nextLine();
+//         String another="";
+//         for(int i=0;i<s.length();i++)
+//         {
+//             char ch =s.charAt(i);
+//             if(ch!=' ')
+//              {
+//                 another=another +ch;
+//              }
+//         }
+//         System.out.print(another);
 //     }
 // }
 
