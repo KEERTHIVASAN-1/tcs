@@ -1045,6 +1045,18 @@
 //         System.out.println("White spaces: " + spaces);
 //     }
 // }
+//ASCII value
+// import java.util.*;
+
+// public class striver
+// {
+//     public static void main(String[] args)
+//     {
+//         Scanner input = new Scanner(System.in);
+//         char ch=input.next().charAt(0);
+//         System.out.print((int)ch);
+//     }
+// }
 
 
 
