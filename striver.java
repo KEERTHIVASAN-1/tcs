@@ -938,7 +938,56 @@
 //         System.out.print("arr1 is a subset of arr2");
 //     }
 // }
+//REVERSE PALINDROME TWO WAYS, 2 POINTERS,STORE AND CHECK 
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[] args)
+//     {
+//         Scanner input = new Scanner(System.in);
+//         String s=input.nextLine();
+//         int left=0;
+//         int right=s.length()-1;
+//         while(left<right)
+//         {
+//             if(s.charAt(left)!=s.charAt(right))
+//             {
+//                 System.out.print("not palindrome");
+//                 return;
+//             }
+//             left++;
+//             right--;
+//         }
+//         System.out.print("valid palin");
+//     }
+// }
+// import java.util.*;
 
+// public class striver
+// {
+//     public static void main(String[] args)
+//     {
+//         Scanner input = new Scanner(System.in);
+
+//         String s = input.nextLine();
+
+//         String rev = "";
+
+//         for(int i = s.length()-1; i >= 0; i--)
+//         {
+//             rev = rev + s.charAt(i);
+//         }
+
+//         if(s.equals(rev))
+//         {
+//             System.out.println("Palindrome");
+//         }
+//         else
+//         {
+//             System.out.println("Not Palindrome");
+//         }
+//     }
+// }
 
 
 
