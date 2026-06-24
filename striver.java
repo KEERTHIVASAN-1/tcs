@@ -1100,6 +1100,29 @@
 //         System.out.print(another);
 //     }
 // }
+//ONLY ALPHABETS PRINT
+// import java.util.*;
+
+// public class striver
+// {
+//     public static void main(String[] args)
+//     {
+//         Scanner input = new Scanner(System.in);
+//         String s=input.nextLine();
+//         String another="";
+//         for(int i=0;i<s.length();i++)
+//         {
+//             char ch=s.charAt(i);
+//             if((ch>='a' && ch<='z') || ch>='A' && ch<='Z')
+//             {
+//                 another=another+ch;
+//             }
+//         }
+//         System.out.print(another);
+//     }
+// }
+
+
 
 
 
