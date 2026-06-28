@@ -1164,6 +1164,28 @@
 //         }
 //     }
 // }
+import java.util.*;
+public class striver
+{
+    public static void main(String[]args)
+    {
+        Scanner input=new Scanner(System.in);
+        String s=input.nextLine();
+        LinkedHashMap<Character,Integer>map=new LinkedHashMap<>();
+        for(int i=0;i<s.length();i++)
+        {
+            char ch=s.charAt(i);
+            map.put(ch,map.getOrDefault(ch,0)+1);
+        }
+        for(char ch='a' ;ch<='z';ch++)
+        {
+            if(map.containsKey(ch))
+            {
+                System.out.print(ch+""+map.get(ch)+" ");
+            }
+        }
+    }
+}
 
 
 
