@@ -1261,6 +1261,27 @@
 //         System.out.print(ans);
 //     }
 // }
+//REMOVE DUPLICATES IN A STRING
+import java.util.*;
+public class striver
+{
+    public static void main(String[]args)
+    {
+        Scanner input=new Scanner(System.in);
+        String s=input.nextLine();
+        LinkedHashSet<Character>set=new LinkedHashSet<>();
+        for(int i=0;i<s.length();i++)
+        {
+            char ch=s.charAt(i);
+            set.add(ch);
+        }
+        for(char ch:set)
+        {
+            System.out.print(ch);
+        }
+    }
+}
+
 
 
 
