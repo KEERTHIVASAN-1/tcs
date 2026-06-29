@@ -1262,25 +1262,51 @@
 //     }
 // }
 //REMOVE DUPLICATES IN A STRING
-import java.util.*;
-public class striver
-{
-    public static void main(String[]args)
-    {
-        Scanner input=new Scanner(System.in);
-        String s=input.nextLine();
-        LinkedHashSet<Character>set=new LinkedHashSet<>();
-        for(int i=0;i<s.length();i++)
-        {
-            char ch=s.charAt(i);
-            set.add(ch);
-        }
-        for(char ch:set)
-        {
-            System.out.print(ch);
-        }
-    }
-}
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String s=input.nextLine();
+//         LinkedHashSet<Character>set=new LinkedHashSet<>();
+//         for(int i=0;i<s.length();i++)
+//         {
+//             char ch=s.charAt(i);
+//             set.add(ch);
+//         }
+//         for(char ch:set)
+//         {
+//             System.out.print(ch);
+//         }
+//     }
+// }
+//Print ALL DUPLICATES IN A STRING
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String s=input.nextLine();
+//         LinkedHashMap<Character,Integer>map=new LinkedHashMap<>();
+//         for(int i=0;i<s.length();i++)
+//         {
+//             char ch=s.charAt(i);
+//             map.put(ch,map.getOrDefault(ch,0)+1);
+//         }
+//         for(char ch='a';ch<='z';ch++)
+//         {
+//             if(map.containsKey(ch) && map.get(ch)>1)
+//             {
+//                 System.out.print(ch+":"+map.get(ch)+" ");
+//             }
+//         }
+//     }
+// }
+   
+
+
 
 
 
