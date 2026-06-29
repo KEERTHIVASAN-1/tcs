@@ -1330,6 +1330,26 @@
 //     }
 // }
 //LARGEST WORD IN A STRING
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String s=input.nextLine();
+//         String []arr=s.split(" ");
+//         String ans=arr[0];
+//         for(int i=0;i<arr.length;i++)
+//         {
+//             if(arr[i].length()>ans.length())
+//             {
+//                 ans=arr[i];
+//             }
+//         }
+//         System.out.print(ans);
+//     }
+// }
+//SORT CHARACTER IN A STRING
 import java.util.*;
 public class striver
 {
@@ -1337,16 +1357,13 @@ public class striver
     {
         Scanner input=new Scanner(System.in);
         String s=input.nextLine();
-        String []arr=s.split(" ");
-        String ans=arr[0];
+        //String []arr=s.split("");
+        char []arr=s.toCharArray();
+        Arrays.sort(arr);
         for(int i=0;i<arr.length;i++)
         {
-            if(arr[i].length()>ans.length())
-            {
-                ans=arr[i];
-            }
+            System.out.print(arr[i]);
         }
-        System.out.print(ans);
     }
 }
 
