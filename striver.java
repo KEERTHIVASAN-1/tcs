@@ -1304,6 +1304,32 @@
 //         }
 //     }
 // }
+//Remove Characters from first String present in the Second String
+import java.util.*;
+public class striver
+{
+    public static void main(String[]args)
+    {
+        Scanner input=new Scanner(System.in);
+        String s1=input.nextLine();
+        String s2=input.nextLine();
+        LinkedHashSet<Character>set=new LinkedHashSet<>();
+        for(int i=0;i<s2.length();i++)
+        {
+            char ch=s2.charAt(i);
+            set.add(ch);
+        }
+        for(int i=0;i<s1.length();i++)
+        {
+            char ch=s1.charAt(i);
+            if(!set.contains(ch))
+            {
+                System.out.print(ch);
+            }
+        }
+    }
+}
+
    
 
 
