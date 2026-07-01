@@ -1431,6 +1431,37 @@
 //         System.out.print(s1.indexOf(s2));
 //     }
 // }
+//Print next character of current char throughout string
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String s=input.nextLine();
+//         char []arr=s.toCharArray();
+//         for(int i=0;i<arr.length;i++)
+//         {
+//             char ch=arr[i];
+//             if(ch=='z')
+//             {
+//                 arr[i]='a';
+//             }
+//             else if(ch=='Z')
+//             {
+//                 arr[i]='A';
+//             }
+//             else
+//             {
+//             arr[i]=(char)(ch+1);
+//             }
+//         }
+//         for(int i=0;i<arr.length;i++)
+//         {
+//         System.out.print(arr[i]);
+//         }
+//     }
+// }
 
 
 
