@@ -1350,22 +1350,35 @@
 //     }
 // }
 //SORT CHARACTER IN A STRING
-import java.util.*;
-public class striver
-{
-    public static void main(String[]args)
-    {
-        Scanner input=new Scanner(System.in);
-        String s=input.nextLine();
-        //String []arr=s.split("");
-        char []arr=s.toCharArray();
-        Arrays.sort(arr);
-        for(int i=0;i<arr.length;i++)
-        {
-            System.out.print(arr[i]);
-        }
-    }
-}
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String s=input.nextLine();
+//         //String []arr=s.split("");
+//         char []arr=s.toCharArray();
+//         Arrays.sort(arr);
+//         for(int i=0;i<arr.length;i++)
+//         {
+//             System.out.print(arr[i]);
+//         }
+//     }
+// }
+//NUMBER OF WORDS IN A STRING
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String s=input.nextLine();
+//         String []arr=s.split(" ");
+//         System.out.print(arr.length);
+//     }
+// }
+
 
 
    
