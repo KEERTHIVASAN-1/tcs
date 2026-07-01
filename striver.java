@@ -1462,6 +1462,34 @@
 //         }
 //     }
 // }
+//Remove brackets
+import java.util.*;
+public class striver
+{
+    public static void main(String[]args)
+    {
+        Scanner input=new Scanner(System.in);
+        String s=input.nextLine();
+        char []arr=s.toCharArray();
+        int count=0;
+        char []brr=new char [arr.length];
+        int k=0;
+        for(int i=0;i<arr.length;i++)
+        {
+            char ch=arr[i];
+            if(ch!='(' && ch!=')')
+            {
+                brr[k]=ch;
+                k++;
+            }
+        }
+        for(int i=0;i<k;i++)
+        {
+            System.out.print(brr[i]);
+        }
+    }
+}
+
 
 
 
