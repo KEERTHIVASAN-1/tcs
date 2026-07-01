@@ -1379,34 +1379,59 @@
 //     }
 // }
 //UPPER TO LOWER VICEVERSA
-import java.util.*;
-public class striver
-{
-    public static void main(String[]args)
-    {
-        Scanner input=new Scanner(System.in);
-        String s=input.nextLine();
-        char []arr=s.toCharArray();
-        String ans="";
-        for(int i=0;i<arr.length;i++)
-        {
-            char ch=arr[i];
-            if(Character.isLowerCase(ch))
-            {
-                ch=Character.toUpperCase(ch);
-            }
-            else if(Character.isUpperCase(arr[i]))
-            {
-                ch=Character.toLowerCase(ch);
-            }
-            arr[i]=ch;
-        }
-        for(int i=0;i<arr.length;i++)
-        {
-            System.out.print(arr[i]);
-        }
-    }
-}
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String s=input.nextLine();
+//         char []arr=s.toCharArray();
+//         for(int i=0;i<arr.length;i++)
+//         {
+//             char ch=arr[i];
+//             if(Character.isLowerCase(ch))
+//             {
+//                 ch=Character.toUpperCase(ch);
+//             }
+//             else if(Character.isUpperCase(arr[i]))
+//             {
+//                 ch=Character.toLowerCase(ch);
+//             }
+//             arr[i]=ch;
+//         }
+//         for(int i=0;i<arr.length;i++)
+//         {
+//             System.out.print(arr[i]);
+//         }
+//     }
+// }
+//Concatenate string
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String s1=input.nextLine();
+//         String s2=input.nextLine();
+//         String s3=s1+s2;
+//         System.out.print(s3);
+//     }
+// }
+//FIND INDEX OF STRING IF PRESENT IN ANOTHER STRING
+// import java.util.*;
+// public class striver
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String s1=input.nextLine();
+//         String s2=input.nextLine();
+//         System.out.print(s1.indexOf(s2));
+//     }
+// }
+
 
 
 
