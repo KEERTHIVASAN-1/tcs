@@ -94,6 +94,50 @@
 //         }
 //         System.out.print(count);
 //     }
-// }     
+// } 
+//ANAGRAM CHECKER 
+// import java.util.*;
+// public class kane
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String s1=input.nextLine();
+//         String s2=input.nextLine();
+//         char []arr1=s1.toCharArray();
+//         char []arr2=s2.toCharArray();
+//         Arrays.sort(arr1);
+//         Arrays.sort(arr2);
+//         if(arr1.length!=arr2.length)
+//         {
+//             System.out.print("Not anagram");
+//             return;
+//         }
+
+//         else
+//         {
+//             for(int i=0;i<arr1.length;i++)                          
+//             {
+//                 char ch1=arr1[i];
+//                 char ch2=arr2[i];
+//                 if(ch1!=ch2)
+//                 {
+//                     System.out.print("Not anagram");
+//                     return;
+//                 }
+//             }                                                                       //--------INSTEAD OF FOR LOOP------------
+//                                                                                     // if(Arrays.equals(arr1, arr2))
+//                                                                                     // {
+//                                                                                     //     System.out.print("Anagrams");
+//                                                                                     // }
+//                                                                                     // else
+//                                                                                     // {
+//                                                                                     //     System.out.print("Not Anagrams");
+//                                                                                     // }
+//             System.out.print("Anagram");
+//         }
+//     }
+// }
+
             
 
