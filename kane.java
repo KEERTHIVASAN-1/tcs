@@ -1,0 +1,38 @@
+import java.util.*;
+public class kane
+{
+    public static void main(String[]args)
+    {
+        Scanner input=new Scanner(System.in);
+        int n=input.nextInt();
+        int k=input.nextInt();
+        int []arr=new int [n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=input.nextInt();
+        }
+        for(int i=0;i<n;i++)
+        {
+            if(arr[i]%2==0)
+            {
+                arr[i]=arr[i]-1;
+            }
+        }
+        int maxsum=0;
+        for(int i=0;i<=n-k;i++)
+        {
+            HashSet<Integer>set=new HashSet<>();
+            int sum=0;
+            for(int j=i;j<i+k;j++)
+            {
+                set.add(arr[j]);   
+                sum=sum+arr[j];
+            }
+            if(set.size()==k)
+            {
+                maxsum=Math.max(sum,maxsum);
+            }
+        }
+        System.out.print(maxsum);
+    }
+}
