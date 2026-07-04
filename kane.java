@@ -64,6 +64,36 @@
 //         System.out.print(max_sum);
 //     }
 // }
-            
+//subarray sum equLals K
+// import java.util.*;
+// public class kane
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String []s=input.nextLine().split(" ");
+//         int n=s.length;
+//         int []arr=new int [n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=Integer.parseInt(s[i]);
+//         }
+//         int k=input.nextInt();
+//         int count=0;
+//         for(int i=0;i<n;i++)
+//         {
+//             int sum=0;
+//             for(int j=i;j<n;j++)
+//             {
+//                 sum=sum+arr[j];
+//                 if(sum==k)
+//                 {
+//                     count++;
+//                 }
+//             }
+//         }
+//         System.out.print(count);
+//     }
+// }     
             
 
