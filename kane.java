@@ -171,48 +171,78 @@
 //     }
 // }
 //First Nonrepeat Mostfreq
-import java.util.*;
-public class kane
-{
-    public static void main(String[]args)
-    {
-        Scanner input=new Scanner(System.in);
-        String s=input.nextLine();
-        char []arr=s.toCharArray();
-        HashMap<Character,Integer>map=new HashMap<>();
-        for(int i=0;i<arr.length;i++)
-        {
-            char ch=arr[i];
-            map.put(ch,map.getOrDefault(ch,0)+1);
-        }
-        boolean flag=false;
-        for(int i=0;i<arr.length;i++)
-        {
-            char ch=arr[i];
-            if(map.get(ch)==1)
-            {
-                System.out.print(ch+ " ");
-                flag = true;
-                break;
-            }
-        }
-        if(!flag)
-        {
-            System.out.print("None ");
-        }
-        int max=0;
-        char maxchar=arr[0];
-        for(int i=0;i<arr.length;i++)
-        {
-            char ch=arr[i];
-            if(map.get(ch)>max)
-            {
-                max=map.get(ch);
-                maxchar=ch;
-            }
-        }
-        System.out.print(maxchar);
-    }
-}
+// import java.util.*;
+// public class kane
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String s=input.nextLine();
+//         char []arr=s.toCharArray();
+//         HashMap<Character,Integer>map=new HashMap<>();
+//         for(int i=0;i<arr.length;i++)
+//         {
+//             char ch=arr[i];
+//             map.put(ch,map.getOrDefault(ch,0)+1);
+//         }
+//         boolean flag=false;
+//         for(int i=0;i<arr.length;i++)
+//         {
+//             char ch=arr[i];
+//             if(map.get(ch)==1)
+//             {
+//                 System.out.print(ch+ " ");
+//                 flag = true;
+//                 break;
+//             }
+//         }
+//         if(!flag)
+//         {
+//             System.out.print("None ");
+//         }
+//         int max=0;
+//         char maxchar=arr[0];
+//         for(int i=0;i<arr.length;i++)
+//         {
+//             char ch=arr[i];
+//             if(map.get(ch)>max)
+//             {
+//                 max=map.get(ch);
+//                 maxchar=ch;
+//             }
+//         }
+//         System.out.print(maxchar);
+//     }
+// }
+//SUM OF ELEMENTS OCCUR ONLY ONCE
+// import java.util.*;
+// public class kane
+// {
+//     public static void main(String []args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String []s=input.nextLine().split(" ");
+//         int n=s.length;
+//         int []arr=new int[n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=Integer.parseInt(s[i]);
+//         }
+//         int sum=0;
+//         HashMap<Integer,Integer>map=new HashMap<>();
+//         for(int i=0;i<n;i++)
+//         {
+//             map.put(arr[i],map.getOrDefault(arr[i],0)+1);
+//         }
+//         for(int i=0;i<n;i++)
+//         {
+//             if(map.get(arr[i])==1)
+//             {
+//                 sum=sum+arr[i];
+//             }
+//         }
+//         System.out.print(sum);
+//     }
+// }
             
 
