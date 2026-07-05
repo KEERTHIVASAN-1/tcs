@@ -280,5 +280,39 @@
 //         System.out.print(count);
 //     }
 // }
-            
+//REMOVE DUPLICATE AND PRINT IN ASC,DESC
+// import java.util.*;
+// public class kane
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String s=input.nextLine();
+//         String []arr=s.split(" ");
+//         ArrayList<String>list=new ArrayList<>();
+//         HashMap<String,Integer>map=new HashMap<>();
+//         for(int i=0;i<arr.length;i++)
+//         {
+//             map.put(arr[i],map.getOrDefault(arr[i],0)+1);
+//         }
+//         for(String m:map.keySet())
+//         {
+//             if(map.get(m)==1)
+//             {
+//                 list.add(m);
+//             }
+//         } 
+//         Collections.sort(list);
+//         for(String m:list)
+//         {
+//             System.out.print(m+" ");
+//         }
+//         System.out.println();
+//         Collections.reverse(list);
+//         for(String m:list)
+//         {
+//             System.out.print(m+" ");
+//         }
+//     }
+// }    
 
