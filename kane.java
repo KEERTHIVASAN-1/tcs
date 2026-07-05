@@ -138,6 +138,37 @@
 //         }
 //     }
 // }
-
+//REMOVE CONSECUTIVE DUPLIATES
+import java.util.*;
+public class kane
+{
+    public static void main(String[]args)
+    {
+        Scanner input=new Scanner(System.in);
+        String []s=input.nextLine().split(" ");
+        int n=s.length;
+        int []arr=new int [n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=Integer.parseInt(s[i]);
+        }
+        int []brr=new int[n];
+        int k=0;
+        for(int i=0;i<arr.length-1;i++)
+        {
+            if(arr[i]!=arr[i+1])
+            {
+                brr[k]=arr[i];
+                k++;
+            }
+        }
+        brr[k]=arr[arr.length-1];
+        k++;
+        for(int i=0;i<k;i++)
+        {
+            System.out.print(brr[i]+ " ");
+        }
+    }
+}
             
 
