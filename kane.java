@@ -139,35 +139,79 @@
 //     }
 // }
 //REMOVE CONSECUTIVE DUPLIATES
+// import java.util.*;
+// public class kane
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String []s=input.nextLine().split(" ");
+//         int n=s.length;
+//         int []arr=new int [n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=Integer.parseInt(s[i]);
+//         }
+//         int []brr=new int[n];
+//         int k=0;
+//         for(int i=0;i<arr.length-1;i++)
+//         {
+//             if(arr[i]!=arr[i+1])
+//             {
+//                 brr[k]=arr[i];
+//                 k++;
+//             }
+//         }
+//         brr[k]=arr[arr.length-1];
+//         k++;
+//         for(int i=0;i<k;i++)
+//         {
+//             System.out.print(brr[i]+ " ");
+//         }
+//     }
+// }
+//First Nonrepeat Mostfreq
 import java.util.*;
 public class kane
 {
     public static void main(String[]args)
     {
         Scanner input=new Scanner(System.in);
-        String []s=input.nextLine().split(" ");
-        int n=s.length;
-        int []arr=new int [n];
-        for(int i=0;i<n;i++)
+        String s=input.nextLine();
+        char []arr=s.toCharArray();
+        HashMap<Character,Integer>map=new HashMap<>();
+        for(int i=0;i<arr.length;i++)
         {
-            arr[i]=Integer.parseInt(s[i]);
+            char ch=arr[i];
+            map.put(ch,map.getOrDefault(ch,0)+1);
         }
-        int []brr=new int[n];
-        int k=0;
-        for(int i=0;i<arr.length-1;i++)
+        boolean flag=false;
+        for(int i=0;i<arr.length;i++)
         {
-            if(arr[i]!=arr[i+1])
+            char ch=arr[i];
+            if(map.get(ch)==1)
             {
-                brr[k]=arr[i];
-                k++;
+                System.out.print(ch+ " ");
+                flag = true;
+                break;
             }
         }
-        brr[k]=arr[arr.length-1];
-        k++;
-        for(int i=0;i<k;i++)
+        if(!flag)
         {
-            System.out.print(brr[i]+ " ");
+            System.out.print("None ");
         }
+        int max=0;
+        char maxchar=arr[0];
+        for(int i=0;i<arr.length;i++)
+        {
+            char ch=arr[i];
+            if(map.get(ch)>max)
+            {
+                max=map.get(ch);
+                maxchar=ch;
+            }
+        }
+        System.out.print(maxchar);
     }
 }
             
