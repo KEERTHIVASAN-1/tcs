@@ -244,5 +244,41 @@
 //         System.out.print(sum);
 //     }
 // }
+//VALID STRING PAIRS
+// import java.util.*;
+// public class kane
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int n=input.nextInt();
+//         int st=input.nextInt();
+//         int end=input.nextInt();
+//         int [] arr=new int[n];
+//         for(int i=0;i<n;i++)
+//         {
+//             arr[i]=input.nextInt();
+//         }
+//         int count=0;
+//         int ansi=0;
+//         for(int i=0;i<n;i++)
+//         {
+//             for(int j=0;j<n;j++)
+//             {
+//                 if(i==j)
+//                 {
+//                     continue;
+//                 }
+//                 String s=arr[i]+""+arr[j];
+//                 ansi=Integer.parseInt(s);
+//                 if(ansi>=st && ansi <=end)
+//                 {
+//                     count++;
+//                 }
+//             }
+//         }
+//         System.out.print(count);
+//     }
+// }
             
 
