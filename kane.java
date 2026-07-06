@@ -314,5 +314,38 @@
 //             System.out.print(m+" ");
 //         }
 //     }
-// }    
+// } 
+//PERMUTATION OF A STRING   
+// import java.util.*;
+// public class kane
+// {
+//     public static int fact(int n)
+//     {
+//         int ans=1;
+//         for(int i=1;i<=n;i++)
+//         {
+//             ans=ans*i;
+//         }
+//         return ans;
+//     }
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         String s=input.nextLine();
+//         int n=s.length();
+//         char []arr=s.toCharArray();
+//         HashMap<Character,Integer>map=new HashMap<>();
+//         for(int i=0;i<n;i++)
+//         {
+//             char ch=arr[i];
+//             map.put(ch,map.getOrDefault(ch,0)+1);
+//         }
+//         int answer=fact(n);
+//         for(char num:map.keySet())
+//         {
+//             answer=answer/fact(map.get(num));
+//         }
+//         System.out.print(answer);
+//     }
+// }
 
