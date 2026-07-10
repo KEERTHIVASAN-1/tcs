@@ -510,6 +510,80 @@
 
 //     }
 // }
+//PRIME DIGIT SUM MULTIPLICATION
+// import java.util.*;
+// public class kane
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int n=input.nextInt();
+//         int m=input.nextInt();
+//         int last1=0;
+//         int num1=0;
+//         int sum1=0;
+//         int last2=0;
+//         int num2=0;
+//         int sum2=0;
+//         int count=0;
+//         boolean flag1=false;
+//         boolean flag2=false;
+//         for(int i=2;;i++)
+//         {
+//             boolean flag=true;
+//             for(int j=2;j*j<=i;j++)
+//             {
+//                 if(i%j==0)
+//                 {
+//                     flag=false;
+//                     break;
+//                 }
+//             }
+//             if(flag)
+//             {
+//                 count++;
+//                 if(count==n)
+//                 {
+//                     flag1=true;
+//                     num1=i;
+//                     while(num1>=10)
+//                     {
+//                         sum1=0;
+//                         while(num1>0)
+//                         {
+//                             last1=num1%10;
+//                             sum1=sum1+last1;
+//                             num1=num1/10;
+//                         }
+//                         num1=sum1;
+//                     }
+//                 }
+//                 if(count==m)
+//                 {
+//                     flag2=true;
+//                     num2=i;
+//                     while(num2>=10)
+//                     {
+//                         sum2=0;
+//                         while(num2>0)
+//                         {
+//                             last2=num2%10;
+//                             sum2=sum2+last2;
+//                             num2=num2/10;
+//                         }
+//                         num2=sum2;
+//                     }
+//                 }
+//             }
+//             if(flag1 && flag2)
+//             {
+//                 System.out.print(num1*num2);
+//                 return;
+//             }
+//         }
+        
+//     }
+// }
 
 
 
