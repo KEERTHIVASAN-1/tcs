@@ -341,11 +341,60 @@
 //             map.put(ch,map.getOrDefault(ch,0)+1);
 //         }
 //         int answer=fact(n);
-//         for(char num:map.keySet())
+                                                                                    // n!
+                                                                            // --------------------
+                                                                            // (f1! × f2! × ...)
+
+                                                                            // where:
+
+                                                                            // n = length of the string
+                                                                            // f1, f2... = frequencies of repeated characters
+//         for(char num:map.keySet())                                                                        
 //         {
 //             answer=answer/fact(map.get(num));
 //         }
 //         System.out.print(answer);
 //     }
 // }
+//WINNER BASED ON VOTES
+import java.util.*;
+public class kane
+{
+    public static void main(String[]args)
+    {
+        Scanner input=new Scanner(System.in);
+        int n=input.nextInt();
+        int l=input.nextInt();
+        int len=n*l;
+        char []arr=new char [len];
+        for(int i=0;i<len;i++)
+        {
+            arr[i]=input.next().charAt(0);
+        }
+        HashMap<Character,Integer>map=new HashMap<>();
+        for(char ch:arr)
+        {
+            map.put(ch,map.getOrDefault(ch,0)+1);
+        }
+        boolean flag=true;
+        char max=' ';
+        for(char ch1:map.keySet())
+        {
+            if(map.get(ch1)>len/2)
+            {
+                max=ch1;
+                flag=false;
+            }
+        }
+        if(flag)
+        {
+            System.out.print("No winner");
+        }
+        else if(!flag)
+        {
+            System.out.print(max);
+        }
+    }
+}
+
 
