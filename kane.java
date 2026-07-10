@@ -357,6 +357,46 @@
 //     }
 // }
 //WINNER BASED ON VOTES
+// import java.util.*;
+// public class kane
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int n=input.nextInt();
+//         int l=input.nextInt();
+//         int len=n*l;
+//         char []arr=new char [len];
+//         for(int i=0;i<len;i++)
+//         {
+//             arr[i]=input.next().charAt(0);
+//         }
+//         HashMap<Character,Integer>map=new HashMap<>();
+//         for(char ch:arr)
+//         {
+//             map.put(ch,map.getOrDefault(ch,0)+1);
+//         }
+//         boolean flag=true;
+//         char max=' ';
+//         for(char ch1:map.keySet())
+//         {
+//             if(map.get(ch1)>len/2)
+//             {
+//                 max=ch1;
+//                 flag=false;
+//             }
+//         }
+//         if(flag)
+//         {
+//             System.out.print("No winner");
+//         }
+//         else if(!flag)
+//         {
+//             System.out.print(max);
+//         }
+//     }
+// }
+//PRIME TILL N
 import java.util.*;
 public class kane
 {
@@ -364,36 +404,24 @@ public class kane
     {
         Scanner input=new Scanner(System.in);
         int n=input.nextInt();
-        int l=input.nextInt();
-        int len=n*l;
-        char []arr=new char [len];
-        for(int i=0;i<len;i++)
+        int sum=0;
+        for(int i=2;i<=n;i++)
         {
-            arr[i]=input.next().charAt(0);
-        }
-        HashMap<Character,Integer>map=new HashMap<>();
-        for(char ch:arr)
-        {
-            map.put(ch,map.getOrDefault(ch,0)+1);
-        }
-        boolean flag=true;
-        char max=' ';
-        for(char ch1:map.keySet())
-        {
-            if(map.get(ch1)>len/2)
+            boolean flag=true;
+            for(int j=2;j<i;j++)
             {
-                max=ch1;
-                flag=false;
+                if(i%j==0)
+                {
+                    flag=false;
+                    break;
+                }
+            }
+            if(flag)
+            {
+                sum=sum+i;
             }
         }
-        if(flag)
-        {
-            System.out.print("No winner");
-        }
-        else if(!flag)
-        {
-            System.out.print(max);
-        }
+        System.out.print(sum);
     }
 }
 
