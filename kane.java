@@ -397,6 +397,34 @@
 //     }
 // }
 //PRIME TILL N
+// import java.util.*;
+// public class kane
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int n=input.nextInt();
+//         int sum=0;
+//         for(int i=2;i<=n;i++)
+//         {
+//             boolean flag=true;
+//             for(int j=2;j<i;j++)
+//             {
+//                 if(i%j==0)
+//                 {
+//                     flag=false;
+//                     break;
+//                 }
+//             }
+//             if(flag)
+//             {
+//                 sum=sum+i;
+//             }
+//         }
+//         System.out.print(sum);
+//     }
+// }
+//Xth and Yth Prime Number Calculation
 import java.util.*;
 public class kane
 {
@@ -404,11 +432,16 @@ public class kane
     {
         Scanner input=new Scanner(System.in);
         int n=input.nextInt();
-        int sum=0;
-        for(int i=2;i<=n;i++)
+        int m=input.nextInt();
+        int a=0;
+        int b=0;
+        int count=0;
+        boolean flag1=false;
+        boolean flag2=false;
+        for(int i=2;;i++)
         {
             boolean flag=true;
-            for(int j=2;j<i;j++)
+            for(int j=2;j*j<=i;j++)
             {
                 if(i%j==0)
                 {
@@ -418,10 +451,25 @@ public class kane
             }
             if(flag)
             {
-                sum=sum+i;
+            count++;
+            if(count==n)
+            {
+               a=i;
+               flag1=true;
+            }
+            if(count==m)
+            {
+                b=i;
+                flag2=true;
+            }
+            }
+            if(flag1 && flag2)
+            {
+                int c=(a*b)-1;
+                System.out.print(c);
+                return;
             }
         }
-        System.out.print(sum);
     }
 }
 
