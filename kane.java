@@ -425,52 +425,91 @@
 //     }
 // }
 //Xth and Yth Prime Number Calculation
-import java.util.*;
-public class kane
-{
-    public static void main(String[]args)
-    {
-        Scanner input=new Scanner(System.in);
-        int n=input.nextInt();
-        int m=input.nextInt();
-        int a=0;
-        int b=0;
-        int count=0;
-        boolean flag1=false;
-        boolean flag2=false;
-        for(int i=2;;i++)
-        {
-            boolean flag=true;
-            for(int j=2;j*j<=i;j++)
-            {
-                if(i%j==0)
-                {
-                    flag=false;
-                    break;
-                }
-            }
-            if(flag)
-            {
-            count++;
-            if(count==n)
-            {
-               a=i;
-               flag1=true;
-            }
-            if(count==m)
-            {
-                b=i;
-                flag2=true;
-            }
-            }
-            if(flag1 && flag2)
-            {
-                int c=(a*b)-1;
-                System.out.print(c);
-                return;
-            }
-        }
-    }
-}
+// import java.util.*;
+// public class kane
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int n=input.nextInt();
+//         int m=input.nextInt();
+//         int a=0;
+//         int b=0;
+//         int count=0;
+//         boolean flag1=false;
+//         boolean flag2=false;
+//         for(int i=2;;i++)
+//         {
+//             boolean flag=true;
+//             for(int j=2;j*j<=i;j++)
+//             {
+//                 if(i%j==0)
+//                 {
+//                     flag=false;
+//                     break;
+//                 }
+//             }
+//             if(flag)
+//             {
+//             count++;
+//             if(count==n)
+//             {
+//                a=i;
+//                flag1=true;
+//             }
+//             if(count==m)
+//             {
+//                 b=i;
+//                 flag2=true;
+//             }
+//             }
+//             if(flag1 && flag2)
+//             {
+//                 int c=(a*b)-1;
+//                 System.out.print(c);
+//                 return;
+//             }
+//         }
+//     }
+// }
+//Sum of Mth to (M+N)th Prime Numbers
+// import java.util.*;
+// public class kane
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int m=input.nextInt();
+//         int n=input.nextInt();
+//         int count=0;int sum=0;
+//         for(int i=2;;i++)
+//         {
+//             boolean flag=true;
+//             for(int j=2;j*j<=i;j++)
+//             {
+//                 if(i%j==0)
+//                 {
+//                     flag=false;
+//                     break;
+//                 }
+//             }
+//             if(flag)
+//             {
+//                 count++;
+//                 if(count>=m && count<=m+n)
+//                 {
+//                     sum=sum+i;
+//                 }
+//                 if(count==m+n)
+//                 {
+//                     System.out.print(sum);
+//                     return;
+//                 }
+//             }
+//         }
+
+//     }
+// }
+
 
 
