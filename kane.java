@@ -584,6 +584,30 @@
         
 //     }
 // }
+//LCM USING FORMULA
+// import java.util.*;
+// public class kane
+// {
+//     public static void main(String[]args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         long a=input.nextLong();
+//         long b=input.nextLong();
+//         long gcd=1;
+//         long x=a;
+//         long y=b;
+//         while(b!=0)
+//         {
+//             long temp=b;
+//             b=a%b;
+//             a=temp;
+//         }
+//         gcd=a;
+//         long lcm=(x*y)/gcd;
+//         System.out.println(lcm);
+//         System.out.println(gcd);
+//     }
+// }
 
 
 
